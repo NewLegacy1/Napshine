@@ -10,7 +10,7 @@ export function MobileBar() {
       <div className="mx-auto flex max-w-lg gap-3">
         <a
           href={`tel:${siteConfig.phone}`}
-          className="flex flex-1 items-center justify-center gap-2 rounded-[var(--btn-radius)] border border-brand-600/40 py-3 text-sm font-semibold text-accent-500"
+          className="mobile-bar-call flex flex-1 items-center justify-center gap-2 rounded-[var(--btn-radius)] border border-brand-600/40 py-3 text-sm font-semibold text-accent-500"
         >
           <Phone className="h-4 w-4" />
           Call

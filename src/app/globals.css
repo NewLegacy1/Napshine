@@ -41,20 +41,21 @@
 
   --hero-overlay: linear-gradient(
     105deg,
-    rgb(4 47 46 / 0.93) 0%,
-    rgb(4 47 46 / 0.82) 42%,
-    rgb(4 47 46 / 0.45) 100%
+    rgb(0 0 0 / 0.65) 0%,
+    rgb(0 0 0 / 0.4) 42%,
+    rgb(0 0 0 / 0.1) 100%
   );
-  --hero-text-muted: #ccfbf1;
+  --hero-text-muted: #e2e8f0;
 
   --btn-primary-bg: #facc15;
   --btn-primary-text: #134e4a;
   --btn-primary-hover: #fde047;
   --btn-primary-shadow: rgb(234 179 8 / 0.35);
 
-  --btn-secondary-bg: transparent;
+  --btn-secondary-bg: rgb(13 148 136 / 0.28);
   --btn-secondary-text: #ffffff;
-  --btn-secondary-border: rgb(255 255 255 / 0.7);
+  --btn-secondary-border: rgb(45 212 191 / 0.55);
+  --btn-secondary-hover: rgb(13 148 136 / 0.42);
 
   --footer-bg: #042f2e;
   --footer-border: #115e59;
@@ -70,9 +71,9 @@
 
   --hero-overlay-mobile: linear-gradient(
     to top,
-    rgb(4 47 46 / 0.96) 0%,
-    rgb(4 47 46 / 0.72) 38%,
-    rgb(4 47 46 / 0.35) 100%
+    rgb(0 0 0 / 0.75) 0%,
+    rgb(0 0 0 / 0.45) 38%,
+    rgb(0 0 0 / 0.1) 100%
   );
 }
 
@@ -130,6 +131,7 @@
   --btn-secondary-bg: transparent;
   --btn-secondary-text: #d4af37;
   --btn-secondary-border: rgb(212 175 55 / 0.55);
+  --btn-secondary-hover: rgb(212 175 55 / 0.1);
 
   --footer-bg: #000000;
   --footer-border: #1a1a1a;
@@ -251,11 +253,7 @@ h4 {
   border: 2px solid var(--btn-secondary-border);
 }
 
-.btn-secondary-themed:hover { background: rgb(255 255 255 / 0.08); }
-
-[data-theme="gold"] .btn-secondary-themed:hover {
-  background: rgb(212 175 55 / 0.1);
-}
+.btn-secondary-themed:hover { background: var(--btn-secondary-hover, rgb(255 255 255 / 0.08)); }
 
 .btn-ghost-themed { color: var(--brand-700); }
 .btn-ghost-themed:hover { background: var(--brand-50); }
@@ -263,6 +261,24 @@ h4 {
 .card-themed {
   border: 1px solid var(--border);
   background: var(--surface-card);
+}
+
+.hero-trust-value {
+  color: var(--accent-400);
+}
+
+[data-theme="turquoise"] .hero-trust-value {
+  color: var(--brand-300);
+}
+
+[data-theme="turquoise"] .mobile-bar-call {
+  background: rgb(13 148 136 / 0.12);
+  border-color: rgb(45 212 191 / 0.45);
+  color: var(--brand-700);
+}
+
+[data-theme="turquoise"] .mobile-bar-call:hover {
+  background: rgb(13 148 136 / 0.2);
 }
 
 .chip-themed {

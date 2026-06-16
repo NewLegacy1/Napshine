@@ -14,6 +14,7 @@ export const siteConfig = {
     spacesCleaned: "500+",
     satisfactionFocus: "100%",
     googleRating: "5-Star",
+    googleReviewCount: "180+",
   },
   pricing: {
     residentialFrom: 150,
